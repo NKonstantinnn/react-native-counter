@@ -1,11 +1,14 @@
-
 import React from 'react';
-import {View, Text, StyleSheet} from 'react-native';
+import {View, StyleSheet} from 'react-native';
+
+import ClassCounter from './components/ClassCounter';
+import FuncCounter from './components/FuncCounter';
 
 function App() {
   return (
     <View style={styles.container}>
-      <Text>App</Text>
+      <ClassCounter />
+      <FuncCounter /> 
     </View>
   );
 };
@@ -13,8 +16,7 @@ function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center'
+    justifyContent: 'space-evenly',
   }
 });
 
